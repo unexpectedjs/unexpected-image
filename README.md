@@ -8,6 +8,8 @@ Image metadata plugin for the [Unexpected](https://unexpectedjs.github.io/) asse
 [![Coverage Status](https://coveralls.io/repos/unexpectedjs/unexpected-image/badge.svg)](https://coveralls.io/r/unexpectedjs/unexpected-image)
 [![Dependency Status](https://david-dm.org/unexpectedjs/unexpected-image.svg)](https://david-dm.org/unexpectedjs/unexpected-image)
 
+![Unexpected Image (paparazzi)](./images/animal-paparazzi.jpg)
+
 Images can be specified either as strings (file name) or as Buffer instances.
 
 The metadata will be extracted using `gm identify` via the [gm](http://aheckmann.github.io/gm/)
