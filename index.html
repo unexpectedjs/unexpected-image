@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <link rel="stylesheet" href="static/normalize.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="static/main.css" type="text/css" media="screen" />
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="static/bug-icon-black.ico">
+    <title>unexpected-image</title>
+</head>
+<body class="sidebar-hidden">
+    <header>
+        <div class="logo-icon"></div>
+        <nav>
+            <ul>
+                <li class="menu-toggle-item">
+                    <button class="menu-toggle" onclick="toggleSidebar()"></button>
+                </li>
+                
+                <li class="active"><a href="">unexpected-image</a></li>
+                
+                
+                <li class=""><a href="assertions/string/to-have-metadata-satisfying">Assertions</a></li>
+                
+                
+            </ul>
+        </nav>
+        <div class="search" style="visibility: hidden">
+            <input id="search" placeholder="Search..." value="">
+            <div id="searchDropDown" class="dropDown">
+                <ul id="searchResults"></ul>
+            </div>
+        </div>
+    </header>
+
+<div class="main theme-dark" tabindex="-1">
+    <div class="content">
+        <h1 id="unexpected-image">Unexpected-image</h1>
+<p>Image metadata plugin for the <a href="https://unexpected.js.org/">Unexpected</a> assertion library (version 7+ required). Uses GraphicsMagick, which must be installed on your system.</p>
+<p><a href="http://badge.fury.io/js/unexpected-image"><img src="https://badge.fury.io/js/unexpected-image.svg" alt="NPM version"></a>
+<a href="https://travis-ci.org/unexpectedjs/unexpected-image"><img src="https://travis-ci.org/unexpectedjs/unexpected-image.svg?branch=master" alt="Build Status"></a>
+<a href="https://coveralls.io/r/unexpectedjs/unexpected-image"><img src="https://coveralls.io/repos/unexpectedjs/unexpected-image/badge.svg" alt="Coverage Status"></a>
+<a href="https://david-dm.org/unexpectedjs/unexpected-image"><img src="https://david-dm.org/unexpectedjs/unexpected-image.svg" alt="Dependency Status"></a></p>
+<p><img src="animal-paparazzi.jpg" alt="Unexpected Image (paparazzi)"></p>
+<p>Images can be specified either as strings (file name) or as Buffer instances.</p>
+<p>The metadata will be extracted using <code>gm identify</code> via the <a href="http://aheckmann.github.io/gm/">gm</a>
+library and matched with
+<a href="https://unexpectedjs.github.io/assertions/any/to-satisfy/">to satisfy</a> semantics:</p>
+<div class="code lang-javascript">
+  <div><span style="color: #FFAA27">return</span>&nbsp;expect<span style="color: #999">(</span><span style="color: #3CDAFF">'magic-pen-6-colours.jpg'</span><span style="color: #999">,</span>&nbsp;<span style="color: #3CDAFF">'to&nbsp;have&nbsp;metadata&nbsp;satisfying'</span><span style="color: #999">,</span>&nbsp;<span style="color: #999">{</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;format<span style="color: #999">:</span>&nbsp;<span style="color: #3CDAFF">'JPEG'</span><span style="color: #999">,</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #3CDAFF">'Channel&nbsp;Depths'</span><span style="color: #999">:</span>&nbsp;<span style="color: #999">{</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gray<span style="color: #999">:</span>&nbsp;<span style="color: #3CDAFF">'8&nbsp;bits'</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #999">},</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;size<span style="color: #999">:</span>&nbsp;<span style="color: #999">{</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;height<span style="color: #999">:</span>&nbsp;<span style="color: white">400</span><span style="color: #999">,</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width<span style="color: #999">:</span>&nbsp;<span style="color: white">200</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #999">}</span></div>
+  <div><span style="color: #999">});</span></div>
+</div><div class="output">
+  <div><span style="color: red; font-weight: bold">expected</span></div>
+  <div><img style="max-width: 6em; max-width: 10ch; max-height: 5em" src="magic-pen-6-colours.jpg"></div>
+  <div><span style="color: red; font-weight: bold">to&nbsp;have&nbsp;metadata&nbsp;satisfying</span></div>
+  <div>{</div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #939393">format</span>:&nbsp;<span style="color: #3CDAFF">'JPEG'</span>,</div>
+  <div><span style="color: #3CDAFF">'Channel&nbsp;Depths'</span>:&nbsp;{&nbsp;<span style="color: #939393">Gray</span>:&nbsp;<span style="color: #3CDAFF">'8&nbsp;bits'</span>&nbsp;},</div>
+  <div><span style="color: #939393">size</span>:&nbsp;{&nbsp;<span style="color: #939393">height</span>:&nbsp;400,&nbsp;<span style="color: #939393">width</span>:&nbsp;200&nbsp;}</div>
+</div></div>
+  <div>}</div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: red; font-weight: bold">expected</span></div>
+  <div>{</div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #939393">Format</span>:&nbsp;<span style="color: #3CDAFF">'JPEG&nbsp;(Joint&nbsp;Photographic&nbsp;Experts&nbsp;Group&nbsp;JFIF&nbsp;format)'</span>,</div>
+  <div><span style="color: #939393">format</span>:&nbsp;<span style="color: #3CDAFF">'JPEG'</span>,&nbsp;<span style="color: #939393">Geometry</span>:&nbsp;<span style="color: #3CDAFF">'380x248'</span>,&nbsp;<span style="color: #939393">size</span>:&nbsp;{&nbsp;<span style="color: #939393">width</span>:&nbsp;380,&nbsp;<span style="color: #939393">height</span>:&nbsp;248&nbsp;},</div>
+  <div><span style="color: #939393">Class</span>:&nbsp;<span style="color: #3CDAFF">'DirectClass'</span>,&nbsp;<span style="color: #939393">Type</span>:&nbsp;<span style="color: #3CDAFF">'true&nbsp;color'</span>,</div>
+  <div><span style="color: #939393">Depth</span>:&nbsp;<span style="color: #3CDAFF">'8&nbsp;bits-per-pixel&nbsp;component'</span>,&nbsp;<span style="color: #939393">depth</span>:&nbsp;8,</div>
+  <div><span style="color: #3CDAFF">'Channel&nbsp;Depths'</span>:&nbsp;{&nbsp;<span style="color: #939393">Red</span>:&nbsp;<span style="color: #3CDAFF">'8&nbsp;bits'</span>,&nbsp;<span style="color: #939393">Green</span>:&nbsp;<span style="color: #3CDAFF">'8&nbsp;bits'</span>,&nbsp;<span style="color: #939393">Blue</span>:&nbsp;<span style="color: #3CDAFF">'8&nbsp;bits'</span>&nbsp;},</div>
+  <div><span style="color: #3CDAFF">'Channel&nbsp;Statistics'</span>:&nbsp;{</div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #939393">Red</span>:&nbsp;{</div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #939393">Minimum</span>:&nbsp;<span style="color: #3CDAFF">'18.00&nbsp;(0.0706)'</span>,</div>
+  <div><span style="color: #939393">Maximum</span>:&nbsp;<span style="color: #3CDAFF">'255.00&nbsp;(1.0000)'</span>,</div>
+  <div><span style="color: #939393">Mean</span>:&nbsp;<span style="color: #3CDAFF">'232.21&nbsp;(0.9106)'</span>,</div>
+  <div><span style="color: #3CDAFF">'Standard&nbsp;Deviation'</span>:&nbsp;<span style="color: #3CDAFF">'45.25&nbsp;(0.1774)'</span></div>
+</div></div>
+  <div>},</div>
+  <div><span style="color: #939393">Green</span>:&nbsp;{</div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #939393">Minimum</span>:&nbsp;<span style="color: #3CDAFF">'30.00&nbsp;(0.1176)'</span>,</div>
+  <div><span style="color: #939393">Maximum</span>:&nbsp;<span style="color: #3CDAFF">'255.00&nbsp;(1.0000)'</span>,</div>
+  <div><span style="color: #939393">Mean</span>:&nbsp;<span style="color: #3CDAFF">'224.61&nbsp;(0.8808)'</span>,</div>
+  <div><span style="color: #3CDAFF">'Standard&nbsp;Deviation'</span>:&nbsp;<span style="color: #3CDAFF">'55.39&nbsp;(0.2172)'</span></div>
+</div></div>
+  <div>},</div>
+  <div><span style="color: #939393">Blue</span>:&nbsp;{</div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #939393">Minimum</span>:&nbsp;<span style="color: #3CDAFF">'0.00&nbsp;(0.0000)'</span>,</div>
+  <div><span style="color: #939393">Maximum</span>:&nbsp;<span style="color: #3CDAFF">'255.00&nbsp;(1.0000)'</span>,</div>
+  <div><span style="color: #939393">Mean</span>:&nbsp;<span style="color: #3CDAFF">'213.50&nbsp;(0.8373)'</span>,</div>
+  <div><span style="color: #3CDAFF">'Standard&nbsp;Deviation'</span>:&nbsp;<span style="color: #3CDAFF">'74.76&nbsp;(0.2932)'</span></div>
+</div></div>
+  <div>}</div>
+</div></div>
+  <div>},</div>
+  <div><span style="color: #939393">Filesize</span>:&nbsp;<span style="color: #3CDAFF">'13.2K'</span>,&nbsp;<span style="color: #939393">Interlace</span>:&nbsp;<span style="color: #3CDAFF">'No'</span>,&nbsp;<span style="color: #939393">Orientation</span>:&nbsp;<span style="color: #3CDAFF">'TopLeft'</span>,</div>
+  <div><span style="color: #3CDAFF">'Background&nbsp;Color'</span>:&nbsp;<span style="color: #3CDAFF">'white'</span>,&nbsp;<span style="color: #3CDAFF">'Border&nbsp;Color'</span>:&nbsp;<span style="color: #3CDAFF">'#DFDFDF'</span>,</div>
+  <div><span style="color: #3CDAFF">'Matte&nbsp;Color'</span>:&nbsp;<span style="color: #3CDAFF">'#BDBDBD'</span>,&nbsp;<span style="color: #939393">Compose</span>:&nbsp;<span style="color: #3CDAFF">'Over'</span>,&nbsp;<span style="color: #939393">Dispose</span>:&nbsp;<span style="color: #3CDAFF">'Undefined'</span>,</div>
+  <div><span style="color: #939393">Iterations</span>:&nbsp;<span style="color: #3CDAFF">'0'</span>,&nbsp;<span style="color: #939393">Compression</span>:&nbsp;<span style="color: #3CDAFF">'JPEG'</span>,&nbsp;<span style="color: #3CDAFF">'JPEG-Quality'</span>:&nbsp;<span style="color: #3CDAFF">'85'</span>,</div>
+  <div><span style="color: #3CDAFF">'JPEG-Colorspace'</span>:&nbsp;<span style="color: #3CDAFF">'2'</span>,&nbsp;<span style="color: #3CDAFF">'JPEG-Colorspace-Name'</span>:&nbsp;<span style="color: #3CDAFF">'RGB'</span>,</div>
+  <div><span style="color: #3CDAFF">'JPEG-Sampling-factors'</span>:&nbsp;<span style="color: #3CDAFF">'2x2,1x1,1x1'</span>,</div>
+  <div><span style="color: #939393">Signature</span>:&nbsp;<span style="color: #3CDAFF">'5acb0f0d4e02a3b565f723d59290032e96df8c89989f41a71900741ce512beb4'</span>,</div>
+  <div><span style="color: #3CDAFF">'Profile-EXIF'</span>:&nbsp;{</div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #939393">Orientation</span>:&nbsp;<span style="color: #3CDAFF">'1'</span>,&nbsp;<span style="color: #3CDAFF">'X&nbsp;Resolution'</span>:&nbsp;<span style="color: #3CDAFF">'72'</span>,&nbsp;<span style="color: #3CDAFF">'Y&nbsp;Resolution'</span>:&nbsp;<span style="color: #3CDAFF">'72'</span>,</div>
+  <div><span style="color: #3CDAFF">'Resolution&nbsp;Unit'</span>:&nbsp;<span style="color: #3CDAFF">'2'</span>,&nbsp;<span style="color: #3CDAFF">'Date&nbsp;Time'</span>:&nbsp;<span style="color: #3CDAFF">'2014:07:13&nbsp;16:21:04'</span>,</div>
+  <div><span style="color: #3CDAFF">'Y&nbsp;Cb&nbsp;Cr&nbsp;Positioning'</span>:&nbsp;<span style="color: #3CDAFF">'1'</span>,&nbsp;<span style="color: #3CDAFF">'Exif&nbsp;Offset'</span>:&nbsp;<span style="color: #3CDAFF">'144'</span>,&nbsp;<span style="color: #3CDAFF">'Exif&nbsp;Version'</span>:&nbsp;<span style="color: #3CDAFF">'0221'</span>,</div>
+  <div><span style="color: #3CDAFF">'Components&nbsp;Configuration'</span>:&nbsp;<span style="color: #3CDAFF">'\\001\\002\\003\\000'</span>,</div>
+  <div><span style="color: #3CDAFF">'Flash&nbsp;Pix&nbsp;Version'</span>:&nbsp;<span style="color: #3CDAFF">'0100'</span>,&nbsp;<span style="color: #3CDAFF">'Color&nbsp;Space'</span>:&nbsp;<span style="color: #3CDAFF">'1'</span>,</div>
+  <div><span style="color: #3CDAFF">'Exif&nbsp;Image&nbsp;Width'</span>:&nbsp;<span style="color: #3CDAFF">'380'</span>,&nbsp;<span style="color: #3CDAFF">'Exif&nbsp;Image&nbsp;Length'</span>:&nbsp;<span style="color: #3CDAFF">'248'</span></div>
+</div></div>
+  <div>},</div>
+  <div><span style="color: #939393">path</span>:&nbsp;<span style="color: #3CDAFF">'magic-pen-6-colours.jpg'</span></div>
+</div></div>
+  <div>}</div>
+  <div><span style="color: red; font-weight: bold">to&nbsp;satisfy</span></div>
+  <div>{</div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #939393">format</span>:&nbsp;<span style="color: #3CDAFF">'JPEG'</span>,</div>
+  <div><span style="color: #3CDAFF">'Channel&nbsp;Depths'</span>:&nbsp;{&nbsp;<span style="color: #939393">Gray</span>:&nbsp;<span style="color: #3CDAFF">'8&nbsp;bits'</span>&nbsp;},</div>
+  <div><span style="color: #939393">size</span>:&nbsp;{&nbsp;<span style="color: #939393">height</span>:&nbsp;400,&nbsp;<span style="color: #939393">width</span>:&nbsp;200&nbsp;}</div>
+</div></div>
+  <div>}</div>
+  <div>&nbsp;</div>
+  <div>{</div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #939393">Format</span>:&nbsp;<span style="color: #3CDAFF">'JPEG&nbsp;(Joint&nbsp;Photographic&nbsp;Experts&nbsp;Group&nbsp;JFIF&nbsp;format)'</span>,</div>
+</div></div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #939393">format</span>:&nbsp;<span style="color: #3CDAFF">'JPEG'</span>,</div>
+</div></div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #939393">Geometry</span>:&nbsp;<span style="color: #3CDAFF">'380x248'</span>,</div>
+</div></div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #939393">size</span>:&nbsp;{</div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #939393">width</span>:&nbsp;380,&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: red; font-weight: bold">//</span></div>
+</div>&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: red; font-weight: bold">should&nbsp;equal</span>&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div>200</div>
+</div></div>
+</div></div>
+</div></div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #939393">height</span>:&nbsp;248&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: red; font-weight: bold">//</span></div>
+</div>&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: red; font-weight: bold">should&nbsp;equal</span>&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div>400</div>
+</div></div>
+</div></div>
+</div></div>
+  <div>},</div>
+</div></div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #939393">Class</span>:&nbsp;<span style="color: #3CDAFF">'DirectClass'</span>,</div>
+</div></div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #939393">Type</span>:&nbsp;<span style="color: #3CDAFF">'true&nbsp;color'</span>,</div>
+</div></div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #939393">Depth</span>:&nbsp;<span style="color: #3CDAFF">'8&nbsp;bits-per-pixel&nbsp;component'</span>,</div>
+</div></div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #939393">depth</span>:&nbsp;8,</div>
+</div></div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #3CDAFF">'Channel&nbsp;Depths'</span>:&nbsp;{</div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #939393">Red</span>:&nbsp;<span style="color: #3CDAFF">'8&nbsp;bits'</span>,</div>
+</div></div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #939393">Green</span>:&nbsp;<span style="color: #3CDAFF">'8&nbsp;bits'</span>,</div>
+</div></div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #939393">Blue</span>:&nbsp;<span style="color: #3CDAFF">'8&nbsp;bits'</span>,</div>
+</div></div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #939393">Gray</span>:&nbsp;<span style="color: white">undefined</span>&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: red; font-weight: bold">//</span></div>
+</div>&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: red; font-weight: bold">should&nbsp;equal</span>&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #3CDAFF">'8&nbsp;bits'</span></div>
+</div></div>
+</div></div>
+</div></div>
+  <div>},</div>
+</div></div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #3CDAFF">'Channel&nbsp;Statistics'</span>:&nbsp;{&nbsp;<span style="color: #939393">Red</span>:&nbsp;...,&nbsp;<span style="color: #939393">Green</span>:&nbsp;...,&nbsp;<span style="color: #939393">Blue</span>:&nbsp;...&nbsp;},</div>
+</div></div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #939393">Filesize</span>:&nbsp;<span style="color: #3CDAFF">'13.2K'</span>,</div>
+</div></div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #939393">Interlace</span>:&nbsp;<span style="color: #3CDAFF">'No'</span>,</div>
+</div></div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #939393">Orientation</span>:&nbsp;<span style="color: #3CDAFF">'TopLeft'</span>,</div>
+</div></div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #3CDAFF">'Background&nbsp;Color'</span>:&nbsp;<span style="color: #3CDAFF">'white'</span>,</div>
+</div></div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #3CDAFF">'Border&nbsp;Color'</span>:&nbsp;<span style="color: #3CDAFF">'#DFDFDF'</span>,</div>
+</div></div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #3CDAFF">'Matte&nbsp;Color'</span>:&nbsp;<span style="color: #3CDAFF">'#BDBDBD'</span>,</div>
+</div></div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #939393">Compose</span>:&nbsp;<span style="color: #3CDAFF">'Over'</span>,</div>
+</div></div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #939393">Dispose</span>:&nbsp;<span style="color: #3CDAFF">'Undefined'</span>,</div>
+</div></div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #939393">Iterations</span>:&nbsp;<span style="color: #3CDAFF">'0'</span>,</div>
+</div></div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #939393">Compression</span>:&nbsp;<span style="color: #3CDAFF">'JPEG'</span>,</div>
+</div></div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #3CDAFF">'JPEG-Quality'</span>:&nbsp;<span style="color: #3CDAFF">'85'</span>,</div>
+</div></div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #3CDAFF">'JPEG-Colorspace'</span>:&nbsp;<span style="color: #3CDAFF">'2'</span>,</div>
+</div></div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #3CDAFF">'JPEG-Colorspace-Name'</span>:&nbsp;<span style="color: #3CDAFF">'RGB'</span>,</div>
+</div></div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #3CDAFF">'JPEG-Sampling-factors'</span>:&nbsp;<span style="color: #3CDAFF">'2x2,1x1,1x1'</span>,</div>
+</div></div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #939393">Signature</span>:&nbsp;<span style="color: #3CDAFF">'5acb0f0d4e02a3b565f723d59290032e96df8c89989f41a71900741ce512beb4'</span>,</div>
+</div></div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #3CDAFF">'Profile-EXIF'</span>:&nbsp;{</div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #939393">Orientation</span>:&nbsp;<span style="color: #3CDAFF">'1'</span>,&nbsp;<span style="color: #3CDAFF">'X&nbsp;Resolution'</span>:&nbsp;<span style="color: #3CDAFF">'72'</span>,&nbsp;<span style="color: #3CDAFF">'Y&nbsp;Resolution'</span>:&nbsp;<span style="color: #3CDAFF">'72'</span>,</div>
+  <div><span style="color: #3CDAFF">'Resolution&nbsp;Unit'</span>:&nbsp;<span style="color: #3CDAFF">'2'</span>,&nbsp;<span style="color: #3CDAFF">'Date&nbsp;Time'</span>:&nbsp;<span style="color: #3CDAFF">'2014:07:13&nbsp;16:21:04'</span>,</div>
+  <div><span style="color: #3CDAFF">'Y&nbsp;Cb&nbsp;Cr&nbsp;Positioning'</span>:&nbsp;<span style="color: #3CDAFF">'1'</span>,&nbsp;<span style="color: #3CDAFF">'Exif&nbsp;Offset'</span>:&nbsp;<span style="color: #3CDAFF">'144'</span>,&nbsp;<span style="color: #3CDAFF">'Exif&nbsp;Version'</span>:&nbsp;<span style="color: #3CDAFF">'0221'</span>,</div>
+  <div><span style="color: #3CDAFF">'Components&nbsp;Configuration'</span>:&nbsp;<span style="color: #3CDAFF">'\\001\\002\\003\\000'</span>,</div>
+  <div><span style="color: #3CDAFF">'Flash&nbsp;Pix&nbsp;Version'</span>:&nbsp;<span style="color: #3CDAFF">'0100'</span>,&nbsp;<span style="color: #3CDAFF">'Color&nbsp;Space'</span>:&nbsp;<span style="color: #3CDAFF">'1'</span>,&nbsp;<span style="color: #3CDAFF">'Exif&nbsp;Image&nbsp;Width'</span>:&nbsp;<span style="color: #3CDAFF">'380'</span>,</div>
+  <div><span style="color: #3CDAFF">'Exif&nbsp;Image&nbsp;Length'</span>:&nbsp;<span style="color: #3CDAFF">'248'</span></div>
+</div></div>
+  <div>},</div>
+</div></div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #939393">path</span>:&nbsp;<span style="color: #3CDAFF">'magic-pen-6-colours.jpg'</span></div>
+</div></div>
+  <div>}</div>
+</div></div>
+</div><h2 id="license">License</h2>
+<p>Unexpected-image is licensed under a standard 3-clause BSD license -- see
+the <code>LICENSE</code> file for details.</p>
+
+    </div>
+    <a class="github-ribbon" href="https://github.com/unexpectedjs/unexpected-image"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
+</div>
+<script type="text/javascript">
+    baseUrl = '';
+</script>
+<script type="text/javascript" src="static/toggleSidebar.js"></script>
+<script type="text/javascript" src="static/rememberScrollPosition.js"></script>
+<script type="text/javascript" src="static/focusMain.js"></script>
+<script type="text/javascript" src="static/search.js"></script>
+</body>
+</html>
+
