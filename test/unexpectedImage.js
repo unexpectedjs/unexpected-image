@@ -5,8 +5,7 @@ var unexpected = require('unexpected'),
 
 describe('unexpected-image', function () {
     var expect = unexpected.clone()
-        .installPlugin(require('../lib/unexpectedImage'))
-        .installPlugin(require('unexpected-promise'));
+        .installPlugin(require('../lib/unexpectedImage'));
 
     var turtleJpegPath = pathModule.resolve(__dirname, '..', 'testdata', 'turtle.jpg'),
         turtleJpeg = fs.readFileSync(turtleJpegPath);
