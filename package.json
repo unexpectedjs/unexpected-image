@@ -13,9 +13,9 @@
     "istanbul": "0.3.13",
     "jshint": "2.6.3",
     "magicpen": "4.11.0",
-    "magicpen-media": "1.1.1",
+    "magicpen-media": "1.2.0",
     "mocha": "2.2.5",
-    "unexpected": "9.0.0"
+    "unexpected": "9.1.0"
   },
   "scripts": {
     "lint": "jshint .",
