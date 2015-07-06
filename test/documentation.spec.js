@@ -48,7 +48,7 @@ describe("documentation tests", function () {
             });
         }).caught(function (e) {
             expect(e, "to have message",
-                "expected image/jpeg:magic-pen-6-colours.jpg to have metadata satisfying\n" +
+                "expected magic-pen-6-colours.jpg (image/jpeg) to have metadata satisfying\n" +
                 "{\n" +
                 "  format: 'JPEG',\n" +
                 "  'Channel Depths': { Gray: '8 bits' },\n" +
@@ -137,7 +137,7 @@ describe("documentation tests", function () {
             });
         }).caught(function (e) {
             expect(e, "to have message",
-                "expected image/jpeg:magic-pen-6-colours.jpg to have metadata satisfying\n" +
+                "expected magic-pen-6-colours.jpg (image/jpeg) to have metadata satisfying\n" +
                 "{\n" +
                 "  format: 'JPEG',\n" +
                 "  'Channel Depths': { Gray: '8 bits' },\n" +
