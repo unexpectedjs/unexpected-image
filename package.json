@@ -9,7 +9,8 @@
     "unexpected-documentation-site-generator": "2.5.1"
   },
   "peerDependencies": {
-    "magicpen-media": "^1.5.0"
+    "magicpen-media": "^1.5.0",
+    "unexpected": "^9.2.0"
   },
   "devDependencies": {
     "coveralls": "2.11.2",
