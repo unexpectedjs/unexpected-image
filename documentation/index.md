@@ -16,7 +16,7 @@ Image metadata plugin for the [Unexpected](https://unexpected.js.org/) assertion
 
 ![Unexpected Image (paparazzi)](animal-paparazzi.jpg)
 
-Images can be specified either as strings (file name) or as Buffer instances.
+Images can be specified either as strings (file name or data: url) or as Buffer or Uint8Array instances.
 
 The metadata will be extracted using `gm identify` via the [gm](http://aheckmann.github.io/gm/)
 library and matched with
