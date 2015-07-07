@@ -38,6 +38,34 @@ describe('unexpected-image', function () {
         });
     });
 
+    describe('with an image provided as a Uint8Array instance', function () {
+        it('should succeed', function () {
+            return expect(new Uint8Array(turtleJpeg), 'to have metadata satisfying', {
+                format: 'JPEG',
+                size: {
+                    width: 481
+                }
+            });
+        });
+
+        it('should fail with a diff', function () {
+            return expect(
+                expect(new Uint8Array(turtleJpeg), 'to have metadata satisfying', {
+                    format: 'JPEG',
+                    size: {
+                        width: 481,
+                        height: 426
+                    },
+                    Interlace: 'Yes',
+                    Resolution: '96x96 pixels/inch'
+                }),
+                'when rejected',
+                'to have message',
+                    /height: 424 \/\/ should equal 426/
+            );
+        });
+    });
+
     describe('with an image provided as a file name', function () {
         it('should succeed', function () {
             return expect(turtleJpegPath, 'to have metadata satisfying', {
