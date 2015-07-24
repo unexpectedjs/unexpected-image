@@ -5,8 +5,7 @@
   "main": "lib/unexpectedImage.js",
   "dependencies": {
     "gm": "1.17.0",
-    "minimist": "1.1.1",
-    "unexpected-documentation-site-generator": "2.5.1"
+    "minimist": "1.1.1"
   },
   "peerDependencies": {
     "magicpen-media": "^1.5.0",
@@ -19,7 +18,8 @@
     "magicpen": "4.11.0",
     "magicpen-media": "1.5.0",
     "mocha": "2.2.5",
-    "unexpected": "9.2.0"
+    "unexpected": "9.2.0",
+    "unexpected-documentation-site-generator": "2.5.1"
   },
   "scripts": {
     "lint": "jshint .",
