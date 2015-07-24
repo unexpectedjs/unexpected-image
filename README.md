@@ -8,7 +8,7 @@ Image metadata plugin for the [Unexpected](https://unexpected.js.org/) assertion
 [![Coverage Status](https://coveralls.io/repos/unexpectedjs/unexpected-image/badge.svg)](https://coveralls.io/r/unexpectedjs/unexpected-image)
 [![Dependency Status](https://david-dm.org/unexpectedjs/unexpected-image.svg)](https://david-dm.org/unexpectedjs/unexpected-image)
 
-Read [the documentation](http://unexpected.js.org/).
+Read [the documentation](http://unexpected.js.org/unexpected-image/).
 
 License
 -------
