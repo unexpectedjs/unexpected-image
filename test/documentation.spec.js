@@ -73,13 +73,33 @@ describe("documentation tests", function () {
                 "    Blue: '8 bits',\n" +
                 "    Gray: undefined // should equal '8 bits'\n" +
                 "  },\n" +
-                "  'Channel Statistics': { Red: ..., Green: ..., Blue: ... },\n" +
+                "  'Channel Statistics': {\n" +
+                "    Red: {\n" +
+                "      Minimum: '4626.00 (0.0706)',\n" +
+                "      Maximum: '65535.00 (1.0000)',\n" +
+                "      Mean: '59679.23 (0.9106)',\n" +
+                "      'Standard Deviation': '11628.66 (0.1774)'\n" +
+                "    },\n" +
+                "    Green: {\n" +
+                "      Minimum: '7710.00 (0.1176)',\n" +
+                "      Maximum: '65535.00 (1.0000)',\n" +
+                "      Mean: '57725.47 (0.8808)',\n" +
+                "      'Standard Deviation': '14235.62 (0.2172)'\n" +
+                "    },\n" +
+                "    Blue: {\n" +
+                "      Minimum: '0.00 (0.0000)',\n" +
+                "      Maximum: '65535.00 (1.0000)',\n" +
+                "      Mean: '54870.56 (0.8373)',\n" +
+                "      'Standard Deviation': '19212.51 (0.2932)'\n" +
+                "    }\n" +
+                "  },\n" +
                 "  Filesize: '13.2K',\n" +
                 "  Interlace: 'No',\n" +
                 "  Orientation: 'TopLeft',\n" +
                 "  'Background Color': 'white',\n" +
                 "  'Border Color': '#DFDFDF',\n" +
                 "  'Matte Color': '#BDBDBD',\n" +
+                "  'Page geometry': '380x248+0+0',\n" +
                 "  Compose: 'Over',\n" +
                 "  Dispose: 'Undefined',\n" +
                 "  Iterations: '0',\n" +
@@ -94,8 +114,8 @@ describe("documentation tests", function () {
                 "    'Resolution Unit': '2', 'Date Time': '2014:07:13 16:21:04',\n" +
                 "    'Y Cb Cr Positioning': '1', 'Exif Offset': '144', 'Exif Version': '0221',\n" +
                 "    'Components Configuration': '\\\\001\\\\002\\\\003\\\\000',\n" +
-                "    'Flash Pix Version': '0100', 'Color Space': '1', 'Exif Image Width': '380',\n" +
-                "    'Exif Image Length': '248'\n" +
+                "    'Flash Pix Version': '0100', 'Color Space': '1',\n" +
+                "    'Exif Image Width': '380', 'Exif Image Length': '248'\n" +
                 "  },\n" +
                 "  path: 'magic-pen-6-colours.jpg'\n" +
                 "}"
@@ -162,13 +182,33 @@ describe("documentation tests", function () {
                 "    Blue: '8 bits',\n" +
                 "    Gray: undefined // should equal '8 bits'\n" +
                 "  },\n" +
-                "  'Channel Statistics': { Red: ..., Green: ..., Blue: ... },\n" +
+                "  'Channel Statistics': {\n" +
+                "    Red: {\n" +
+                "      Minimum: '4626.00 (0.0706)',\n" +
+                "      Maximum: '65535.00 (1.0000)',\n" +
+                "      Mean: '59679.23 (0.9106)',\n" +
+                "      'Standard Deviation': '11628.66 (0.1774)'\n" +
+                "    },\n" +
+                "    Green: {\n" +
+                "      Minimum: '7710.00 (0.1176)',\n" +
+                "      Maximum: '65535.00 (1.0000)',\n" +
+                "      Mean: '57725.47 (0.8808)',\n" +
+                "      'Standard Deviation': '14235.62 (0.2172)'\n" +
+                "    },\n" +
+                "    Blue: {\n" +
+                "      Minimum: '0.00 (0.0000)',\n" +
+                "      Maximum: '65535.00 (1.0000)',\n" +
+                "      Mean: '54870.56 (0.8373)',\n" +
+                "      'Standard Deviation': '19212.51 (0.2932)'\n" +
+                "    }\n" +
+                "  },\n" +
                 "  Filesize: '13.2K',\n" +
                 "  Interlace: 'No',\n" +
                 "  Orientation: 'TopLeft',\n" +
                 "  'Background Color': 'white',\n" +
                 "  'Border Color': '#DFDFDF',\n" +
                 "  'Matte Color': '#BDBDBD',\n" +
+                "  'Page geometry': '380x248+0+0',\n" +
                 "  Compose: 'Over',\n" +
                 "  Dispose: 'Undefined',\n" +
                 "  Iterations: '0',\n" +
@@ -183,8 +223,8 @@ describe("documentation tests", function () {
                 "    'Resolution Unit': '2', 'Date Time': '2014:07:13 16:21:04',\n" +
                 "    'Y Cb Cr Positioning': '1', 'Exif Offset': '144', 'Exif Version': '0221',\n" +
                 "    'Components Configuration': '\\\\001\\\\002\\\\003\\\\000',\n" +
-                "    'Flash Pix Version': '0100', 'Color Space': '1', 'Exif Image Width': '380',\n" +
-                "    'Exif Image Length': '248'\n" +
+                "    'Flash Pix Version': '0100', 'Color Space': '1',\n" +
+                "    'Exif Image Width': '380', 'Exif Image Length': '248'\n" +
                 "  },\n" +
                 "  path: 'magic-pen-6-colours.jpg'\n" +
                 "}"

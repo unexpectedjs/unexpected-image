@@ -39,13 +39,33 @@ expected magic-pen-6-colours.jpg (image/jpeg) to have metadata satisfying
     Blue: '8 bits',
     Gray: undefined // should equal '8 bits'
   },
-  'Channel Statistics': { Red: ..., Green: ..., Blue: ... },
+  'Channel Statistics': {
+    Red: {
+      Minimum: '4626.00 (0.0706)',
+      Maximum: '65535.00 (1.0000)',
+      Mean: '59679.23 (0.9106)',
+      'Standard Deviation': '11628.66 (0.1774)'
+    },
+    Green: {
+      Minimum: '7710.00 (0.1176)',
+      Maximum: '65535.00 (1.0000)',
+      Mean: '57725.47 (0.8808)',
+      'Standard Deviation': '14235.62 (0.2172)'
+    },
+    Blue: {
+      Minimum: '0.00 (0.0000)',
+      Maximum: '65535.00 (1.0000)',
+      Mean: '54870.56 (0.8373)',
+      'Standard Deviation': '19212.51 (0.2932)'
+    }
+  },
   Filesize: '13.2K',
   Interlace: 'No',
   Orientation: 'TopLeft',
   'Background Color': 'white',
   'Border Color': '#DFDFDF',
   'Matte Color': '#BDBDBD',
+  'Page geometry': '380x248+0+0',
   Compose: 'Over',
   Dispose: 'Undefined',
   Iterations: '0',
@@ -60,8 +80,8 @@ expected magic-pen-6-colours.jpg (image/jpeg) to have metadata satisfying
     'Resolution Unit': '2', 'Date Time': '2014:07:13 16:21:04',
     'Y Cb Cr Positioning': '1', 'Exif Offset': '144', 'Exif Version': '0221',
     'Components Configuration': '\\001\\002\\003\\000',
-    'Flash Pix Version': '0100', 'Color Space': '1', 'Exif Image Width': '380',
-    'Exif Image Length': '248'
+    'Flash Pix Version': '0100', 'Color Space': '1',
+    'Exif Image Width': '380', 'Exif Image Length': '248'
   },
   path: 'magic-pen-6-colours.jpg'
 }
