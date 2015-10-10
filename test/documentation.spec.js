@@ -75,22 +75,22 @@ describe("documentation tests", function () {
                 "  },\n" +
                 "  'Channel Statistics': {\n" +
                 "    Red: {\n" +
-                "      Minimum: '4626.00 (0.0706)',\n" +
-                "      Maximum: '65535.00 (1.0000)',\n" +
-                "      Mean: '59679.23 (0.9106)',\n" +
-                "      'Standard Deviation': '11628.66 (0.1774)'\n" +
+                "      Minimum: '18.00 (0.0706)',\n" +
+                "      Maximum: '255.00 (1.0000)',\n" +
+                "      Mean: '232.21 (0.9106)',\n" +
+                "      'Standard Deviation': '45.25 (0.1774)'\n" +
                 "    },\n" +
                 "    Green: {\n" +
-                "      Minimum: '7710.00 (0.1176)',\n" +
-                "      Maximum: '65535.00 (1.0000)',\n" +
-                "      Mean: '57725.47 (0.8808)',\n" +
-                "      'Standard Deviation': '14235.62 (0.2172)'\n" +
+                "      Minimum: '30.00 (0.1176)',\n" +
+                "      Maximum: '255.00 (1.0000)',\n" +
+                "      Mean: '224.61 (0.8808)',\n" +
+                "      'Standard Deviation': '55.39 (0.2172)'\n" +
                 "    },\n" +
                 "    Blue: {\n" +
                 "      Minimum: '0.00 (0.0000)',\n" +
-                "      Maximum: '65535.00 (1.0000)',\n" +
-                "      Mean: '54870.56 (0.8373)',\n" +
-                "      'Standard Deviation': '19212.51 (0.2932)'\n" +
+                "      Maximum: '255.00 (1.0000)',\n" +
+                "      Mean: '213.50 (0.8373)',\n" +
+                "      'Standard Deviation': '74.76 (0.2932)'\n" +
                 "    }\n" +
                 "  },\n" +
                 "  Filesize: '13.2K',\n" +
@@ -99,7 +99,6 @@ describe("documentation tests", function () {
                 "  'Background Color': 'white',\n" +
                 "  'Border Color': '#DFDFDF',\n" +
                 "  'Matte Color': '#BDBDBD',\n" +
-                "  'Page geometry': '380x248+0+0',\n" +
                 "  Compose: 'Over',\n" +
                 "  Dispose: 'Undefined',\n" +
                 "  Iterations: '0',\n" +
@@ -184,22 +183,22 @@ describe("documentation tests", function () {
                 "  },\n" +
                 "  'Channel Statistics': {\n" +
                 "    Red: {\n" +
-                "      Minimum: '4626.00 (0.0706)',\n" +
-                "      Maximum: '65535.00 (1.0000)',\n" +
-                "      Mean: '59679.23 (0.9106)',\n" +
-                "      'Standard Deviation': '11628.66 (0.1774)'\n" +
+                "      Minimum: '18.00 (0.0706)',\n" +
+                "      Maximum: '255.00 (1.0000)',\n" +
+                "      Mean: '232.21 (0.9106)',\n" +
+                "      'Standard Deviation': '45.25 (0.1774)'\n" +
                 "    },\n" +
                 "    Green: {\n" +
-                "      Minimum: '7710.00 (0.1176)',\n" +
-                "      Maximum: '65535.00 (1.0000)',\n" +
-                "      Mean: '57725.47 (0.8808)',\n" +
-                "      'Standard Deviation': '14235.62 (0.2172)'\n" +
+                "      Minimum: '30.00 (0.1176)',\n" +
+                "      Maximum: '255.00 (1.0000)',\n" +
+                "      Mean: '224.61.47 (0.8808)',\n" +
+                "      'Standard Deviation': '55.39 (0.2172)'\n" +
                 "    },\n" +
                 "    Blue: {\n" +
                 "      Minimum: '0.00 (0.0000)',\n" +
-                "      Maximum: '65535.00 (1.0000)',\n" +
-                "      Mean: '54870.56 (0.8373)',\n" +
-                "      'Standard Deviation': '19212.51 (0.2932)'\n" +
+                "      Maximum: '255.00 (1.0000)',\n" +
+                "      Mean: '213.50 (0.8373)',\n" +
+                "      'Standard Deviation': '74.76 (0.2932)'\n" +
                 "    }\n" +
                 "  },\n" +
                 "  Filesize: '13.2K',\n" +
@@ -208,7 +207,6 @@ describe("documentation tests", function () {
                 "  'Background Color': 'white',\n" +
                 "  'Border Color': '#DFDFDF',\n" +
                 "  'Matte Color': '#BDBDBD',\n" +
-                "  'Page geometry': '380x248+0+0',\n" +
                 "  Compose: 'Over',\n" +
                 "  Dispose: 'Undefined',\n" +
                 "  Iterations: '0',\n" +
