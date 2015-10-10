@@ -191,7 +191,7 @@ describe("documentation tests", function () {
                 "    Green: {\n" +
                 "      Minimum: '30.00 (0.1176)',\n" +
                 "      Maximum: '255.00 (1.0000)',\n" +
-                "      Mean: '224.61.47 (0.8808)',\n" +
+                "      Mean: '224.61 (0.8808)',\n" +
                 "      'Standard Deviation': '55.39 (0.2172)'\n" +
                 "    },\n" +
                 "    Blue: {\n" +

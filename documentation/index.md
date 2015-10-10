@@ -72,7 +72,7 @@ expected magic-pen-6-colours.jpg (image/jpeg) to have metadata satisfying
     Green: {
       Minimum: '30.00 (0.1176)',
       Maximum: '255.00 (1.0000)',
-      Mean: '224.61.47 (0.8808)',
+      Mean: '224.61 (0.8808)',
       'Standard Deviation': '55.39 (0.2172)'
     },
     Blue: {
