@@ -70,8 +70,8 @@ describe("documentation tests", function () {
                 "  'Channel Depths': {\n" +
                 "    Red: '8 bits',\n" +
                 "    Green: '8 bits',\n" +
-                "    Blue: '8 bits',\n" +
-                "    Gray: undefined // should equal '8 bits'\n" +
+                "    Blue: '8 bits'\n" +
+                "    // missing Gray: '8 bits'\n" +
                 "  },\n" +
                 "  'Channel Statistics': {\n" +
                 "    Red: {\n" +
@@ -178,8 +178,8 @@ describe("documentation tests", function () {
                 "  'Channel Depths': {\n" +
                 "    Red: '8 bits',\n" +
                 "    Green: '8 bits',\n" +
-                "    Blue: '8 bits',\n" +
-                "    Gray: undefined // should equal '8 bits'\n" +
+                "    Blue: '8 bits'\n" +
+                "    // missing Gray: '8 bits'\n" +
                 "  },\n" +
                 "  'Channel Statistics': {\n" +
                 "    Red: {\n" +

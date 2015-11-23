@@ -59,8 +59,8 @@ expected magic-pen-6-colours.jpg (image/jpeg) to have metadata satisfying
   'Channel Depths': {
     Red: '8 bits',
     Green: '8 bits',
-    Blue: '8 bits',
-    Gray: undefined // should equal '8 bits'
+    Blue: '8 bits'
+    // missing Gray: '8 bits'
   },
   'Channel Statistics': {
     Red: {
