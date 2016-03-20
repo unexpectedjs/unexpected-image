@@ -19,11 +19,12 @@
     "magicpen": "4.11.0",
     "mocha": "2.2.5",
     "unexpected": "10.3.1",
-    "unexpected-documentation-site-generator": "^4.0.0"
+    "unexpected-documentation-site-generator": "^4.0.0",
+    "unexpected-markdown": "^1.3.2"
   },
   "scripts": {
     "lint": "jshint .",
-    "test": "mocha && npm run lint",
+    "test": "mocha test/**/*.js documentation/**/*.md && npm run lint",
     "travis": "npm test && npm run coverage && (<coverage/lcov.info coveralls || true) && npm run generate-site",
     "coverage": "NODE_ENV=development istanbul cover --report text --report lcov _mocha -- --reporter dot && echo google-chrome coverage/lcov-report/index.html",
     "generate-site": "generate-site --require ./bootstrap-unexpected-markdown.js && cp magic-pen-6-colours.jpg site-build && cp magic-pen-6-colours.jpg site-build/assertions/string/to-have-metadata-satisfying/",
