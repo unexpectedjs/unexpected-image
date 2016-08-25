@@ -9,7 +9,7 @@
     <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="../../../static/bug-icon-black.ico">
     <title>string - to have metadata satisfying</title>
 </head>
-<body class="sidebar-hidden has-sidebar">
+<body class="sidebar-hidden has-sidebar"> 
     <header>
         <div class="logo-icon"></div>
         <nav>
@@ -24,6 +24,7 @@
                 <li class="active"><a href="">Assertions</a></li>
                 
                 
+                
             </ul>
         </nav>
         <div class="search" style="visibility: hidden">
@@ -36,24 +37,28 @@
 
 <section id="assertions">
     <nav id="assertion-menu" class="sidebar js-remember-scroll-position">
-    <ul>
-        
-        <li>
-            <h3>string</h3>
-            <ul>
-                
-                <li class="active">
-                    <a href="">to have metadata satisfying</a>
-                </li>
-                
-            </ul>
-        </li>
-        
-    </ul>
+    
+        <h3 class=""><a href="..">string</a></h3>
+        <ul>
+            
+            <li class="active">
+                <a href="">to have metadata satisfying</a>
+            </li>
+            
+        </ul>
+    
 </nav>
 
     <div class="main" tabindex="-1">
         <div class="content">
+            <h1>to have metadata satisfying</h1>
+            
+                <ul class="declarations">
+                
+                    <li>&lt;string&gt; to have metadata satisfying &lt;any&gt;</li>
+                
+                </ul>
+            
             <p>Asserts that an image has metadata that <a href="http://unexpected.js.org/assertions/any/to-satisfy/">satisfies</a> a given spec.</p>
 <div class="code lang-javascript">
   <div><span style="color: #a71d5d">return</span>&nbsp;<span style="color: #000000">expect</span><span style="color: #000000">(</span><span style="color: #df5000">'magic-pen-6-colours.jpg'</span><span style="color: #000000">,</span>&nbsp;<span style="color: #df5000">'to&nbsp;have&nbsp;metadata&nbsp;satisfying'</span><span style="color: #000000">,</span>&nbsp;<span style="color: #000000">{</span></div>
@@ -131,16 +136,10 @@
   <div><span style="color: #555">Green</span>:&nbsp;<span style="color: #df5000">'8&nbsp;bits'</span>,</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #555">Blue</span>:&nbsp;<span style="color: #df5000">'8&nbsp;bits'</span>,</div>
+  <div><span style="color: #555">Blue</span>:&nbsp;<span style="color: #df5000">'8&nbsp;bits'</span></div>
 </div></div>
-  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #555">Gray</span>:&nbsp;<span style="color: #0086b3">undefined</span>&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: red; font-weight: bold">//</span></div>
-</div>&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: red; font-weight: bold">should&nbsp;equal</span>&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #df5000">'8&nbsp;bits'</span></div>
-</div></div>
-</div></div>
+  <div>&nbsp;&nbsp;<span style="color: red; font-weight: bold">//&nbsp;missing</span>&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #555">Gray</span>:&nbsp;<span style="color: #df5000">'8&nbsp;bits'</span></div>
 </div></div>
   <div>},</div>
 </div></div>
