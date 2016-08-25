@@ -24,7 +24,6 @@
                 <li class="active"><a href="">Assertions</a></li>
                 
                 
-                
             </ul>
         </nav>
         <div class="search" style="visibility: hidden">
@@ -37,28 +36,24 @@
 
 <section id="assertions">
     <nav id="assertion-menu" class="sidebar js-remember-scroll-position">
-    
-        <h3 class=""><a href="..">string</a></h3>
-        <ul>
-            
-            <li class="active">
-                <a href="">to have metadata satisfying</a>
-            </li>
-            
-        </ul>
-    
+    <ul>
+        
+        <li>
+            <h3>string</h3>
+            <ul>
+                
+                <li class="active">
+                    <a href="">to have metadata satisfying</a>
+                </li>
+                
+            </ul>
+        </li>
+        
+    </ul>
 </nav>
 
     <div class="main" tabindex="-1">
         <div class="content">
-            <h1>to have metadata satisfying</h1>
-            
-                <ul class="declarations">
-                
-                    <li>&lt;string&gt; to have metadata satisfying &lt;any&gt;</li>
-                
-                </ul>
-            
             <p>Asserts that an image has metadata that <a href="http://unexpected.js.org/assertions/any/to-satisfy/">satisfies</a> a given spec.</p>
 <div class="code lang-javascript">
   <div><span style="color: #a71d5d">return</span>&nbsp;<span style="color: #000000">expect</span><span style="color: #000000">(</span><span style="color: #df5000">'magic-pen-6-colours.jpg'</span><span style="color: #000000">,</span>&nbsp;<span style="color: #df5000">'to&nbsp;have&nbsp;metadata&nbsp;satisfying'</span><span style="color: #000000">,</span>&nbsp;<span style="color: #000000">{</span></div>
@@ -136,10 +131,16 @@
   <div><span style="color: #555">Green</span>:&nbsp;<span style="color: #df5000">'8&nbsp;bits'</span>,</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #555">Blue</span>:&nbsp;<span style="color: #df5000">'8&nbsp;bits'</span></div>
+  <div><span style="color: #555">Blue</span>:&nbsp;<span style="color: #df5000">'8&nbsp;bits'</span>,</div>
 </div></div>
-  <div>&nbsp;&nbsp;<span style="color: red; font-weight: bold">//&nbsp;missing</span>&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #555">Gray</span>:&nbsp;<span style="color: #df5000">'8&nbsp;bits'</span></div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #555">Gray</span>:&nbsp;<span style="color: #0086b3">undefined</span>&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: red; font-weight: bold">//</span></div>
+</div>&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: red; font-weight: bold">should&nbsp;equal</span>&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #df5000">'8&nbsp;bits'</span></div>
+</div></div>
+</div></div>
 </div></div>
   <div>},</div>
 </div></div>
@@ -148,33 +149,33 @@
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
   <div><span style="color: #555">Red</span>:&nbsp;{</div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #555">Minimum</span>:&nbsp;<span style="color: #df5000">'3084.00&nbsp;(0.0471)'</span>,</div>
+  <div><span style="color: #555">Minimum</span>:&nbsp;<span style="color: #df5000">'4626.00&nbsp;(0.0706)'</span>,</div>
   <div><span style="color: #555">Maximum</span>:&nbsp;<span style="color: #df5000">'65535.00&nbsp;(1.0000)'</span>,</div>
-  <div><span style="color: #555">Mean</span>:&nbsp;<span style="color: #df5000">'59679.08&nbsp;(0.9106)'</span>,</div>
-  <div><span style="color: #df5000">'Standard&nbsp;Deviation'</span>:&nbsp;<span style="color: #df5000">'11641.69&nbsp;(0.1776)'</span></div>
+  <div><span style="color: #555">Mean</span>:&nbsp;<span style="color: #df5000">'59679.23&nbsp;(0.9106)'</span>,</div>
+  <div><span style="color: #df5000">'Standard&nbsp;Deviation'</span>:&nbsp;<span style="color: #df5000">'11628.66&nbsp;(0.1774)'</span></div>
 </div></div>
   <div>},</div>
   <div><span style="color: #555">Green</span>:&nbsp;{</div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #555">Minimum</span>:&nbsp;<span style="color: #df5000">'7453.00&nbsp;(0.1137)'</span>,</div>
+  <div><span style="color: #555">Minimum</span>:&nbsp;<span style="color: #df5000">'7710.00&nbsp;(0.1176)'</span>,</div>
   <div><span style="color: #555">Maximum</span>:&nbsp;<span style="color: #df5000">'65535.00&nbsp;(1.0000)'</span>,</div>
-  <div><span style="color: #555">Mean</span>:&nbsp;<span style="color: #df5000">'57724.93&nbsp;(0.8808)'</span>,</div>
-  <div><span style="color: #df5000">'Standard&nbsp;Deviation'</span>:&nbsp;<span style="color: #df5000">'14237.78&nbsp;(0.2173)'</span></div>
+  <div><span style="color: #555">Mean</span>:&nbsp;<span style="color: #df5000">'57725.47&nbsp;(0.8808)'</span>,</div>
+  <div><span style="color: #df5000">'Standard&nbsp;Deviation'</span>:&nbsp;<span style="color: #df5000">'14235.62&nbsp;(0.2172)'</span></div>
 </div></div>
   <div>},</div>
   <div><span style="color: #555">Blue</span>:&nbsp;{</div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
   <div><span style="color: #555">Minimum</span>:&nbsp;<span style="color: #df5000">'0.00&nbsp;(0.0000)'</span>,</div>
   <div><span style="color: #555">Maximum</span>:&nbsp;<span style="color: #df5000">'65535.00&nbsp;(1.0000)'</span>,</div>
-  <div><span style="color: #555">Mean</span>:&nbsp;<span style="color: #df5000">'54867.59&nbsp;(0.8372)'</span>,</div>
-  <div><span style="color: #df5000">'Standard&nbsp;Deviation'</span>:&nbsp;<span style="color: #df5000">'19237.71&nbsp;(0.2935)'</span></div>
+  <div><span style="color: #555">Mean</span>:&nbsp;<span style="color: #df5000">'54870.56&nbsp;(0.8373)'</span>,</div>
+  <div><span style="color: #df5000">'Standard&nbsp;Deviation'</span>:&nbsp;<span style="color: #df5000">'19212.51&nbsp;(0.2932)'</span></div>
 </div></div>
   <div>}</div>
 </div></div>
   <div>},</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #555">Filesize</span>:&nbsp;<span style="color: #df5000">'13.2Ki'</span>,</div>
+  <div><span style="color: #555">Filesize</span>:&nbsp;<span style="color: #df5000">'13.2K'</span>,</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
   <div><span style="color: #555">Interlace</span>:&nbsp;<span style="color: #df5000">'No'</span>,</div>
@@ -219,7 +220,7 @@
   <div><span style="color: #df5000">'JPEG-Sampling-factors'</span>:&nbsp;<span style="color: #df5000">'2x2,1x1,1x1'</span>,</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #555">Signature</span>:&nbsp;<span style="color: #df5000">'6668dfca6742e25a616a5c51f38311c9bf855574281a862b2afc7be25cf42f1d'</span>,</div>
+  <div><span style="color: #555">Signature</span>:&nbsp;<span style="color: #df5000">'5acb0f0d4e02a3b565f723d59290032e96df8c89989f41a71900741ce512beb4'</span>,</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
   <div><span style="color: #df5000">'Profile-EXIF'</span>:&nbsp;{</div>

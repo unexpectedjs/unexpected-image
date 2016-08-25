@@ -23,7 +23,6 @@
                 <li class=""><a href="assertions/string/to-have-metadata-satisfying">Assertions</a></li>
                 
                 
-                
             </ul>
         </nav>
         <div class="search" style="visibility: hidden">
@@ -48,180 +47,186 @@
 library and matched with
 <a href="https://unexpectedjs.github.io/assertions/any/to-satisfy/">to satisfy</a> semantics:</p>
 <div class="code lang-javascript">
-  <div><span style="color: #F92672">return</span>&nbsp;expect<span style="color: #999">(</span><span style="color: #E6DB74">'magic-pen-6-colours.jpg'</span><span style="color: #999">,</span>&nbsp;<span style="color: #E6DB74">'to&nbsp;have&nbsp;metadata&nbsp;satisfying'</span><span style="color: #999">,</span>&nbsp;<span style="color: #999">{</span></div>
-  <div>&nbsp;&nbsp;&nbsp;&nbsp;format<span style="color: #999">:</span>&nbsp;<span style="color: #E6DB74">'JPEG'</span><span style="color: #999">,</span></div>
-  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #E6DB74">'Channel&nbsp;Depths'</span><span style="color: #999">:</span>&nbsp;<span style="color: #999">{</span></div>
-  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gray<span style="color: #999">:</span>&nbsp;<span style="color: #E6DB74">'8&nbsp;bits'</span></div>
+  <div><span style="color: #FFAA27">return</span>&nbsp;expect<span style="color: #999">(</span><span style="color: #3CDAFF">'magic-pen-6-colours.jpg'</span><span style="color: #999">,</span>&nbsp;<span style="color: #3CDAFF">'to&nbsp;have&nbsp;metadata&nbsp;satisfying'</span><span style="color: #999">,</span>&nbsp;<span style="color: #999">{</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;format<span style="color: #999">:</span>&nbsp;<span style="color: #3CDAFF">'JPEG'</span><span style="color: #999">,</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #3CDAFF">'Channel&nbsp;Depths'</span><span style="color: #999">:</span>&nbsp;<span style="color: #999">{</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gray<span style="color: #999">:</span>&nbsp;<span style="color: #3CDAFF">'8&nbsp;bits'</span></div>
   <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #999">},</span></div>
   <div>&nbsp;&nbsp;&nbsp;&nbsp;size<span style="color: #999">:</span>&nbsp;<span style="color: #999">{</span></div>
-  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;height<span style="color: #999">:</span>&nbsp;<span style="color: #66D9EF; font-weight: bold">400</span><span style="color: #999">,</span></div>
-  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width<span style="color: #999">:</span>&nbsp;<span style="color: #66D9EF; font-weight: bold">200</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;height<span style="color: #999">:</span>&nbsp;<span style="color: white">400</span><span style="color: #999">,</span></div>
+  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width<span style="color: #999">:</span>&nbsp;<span style="color: white">200</span></div>
   <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #999">}</span></div>
   <div><span style="color: #999">});</span></div>
 </div><div class="output">
-  <div><span style="color: #F92672; font-weight: bold">expected</span></div>
+  <div><span style="color: red; font-weight: bold">expected</span></div>
   <div><a href="magic-pen-6-colours.jpg"><img src="magic-pen-6-colours.jpg" title="magic-pen-6-colours.jpg" style="max-width: 6em; max-width: 10ch; max-height: 5em"></a></div>
-  <div><span style="color: #F92672; font-weight: bold">to&nbsp;have&nbsp;metadata&nbsp;satisfying</span></div>
+  <div><span style="color: red; font-weight: bold">to&nbsp;have&nbsp;metadata&nbsp;satisfying</span></div>
   <div>{</div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #CCC">format</span>:&nbsp;<span style="color: #E6DB74">'JPEG'</span>,</div>
-  <div><span style="color: #E6DB74">'Channel&nbsp;Depths'</span>:&nbsp;{&nbsp;<span style="color: #CCC">Gray</span>:&nbsp;<span style="color: #E6DB74">'8&nbsp;bits'</span>&nbsp;},</div>
-  <div><span style="color: #CCC">size</span>:&nbsp;{&nbsp;<span style="color: #CCC">height</span>:&nbsp;<span style="color: #66D9EF">400</span>,&nbsp;<span style="color: #CCC">width</span>:&nbsp;<span style="color: #66D9EF">200</span>&nbsp;}</div>
+  <div><span style="color: #939393">format</span>:&nbsp;<span style="color: #3CDAFF">'JPEG'</span>,</div>
+  <div><span style="color: #3CDAFF">'Channel&nbsp;Depths'</span>:&nbsp;{&nbsp;<span style="color: #939393">Gray</span>:&nbsp;<span style="color: #3CDAFF">'8&nbsp;bits'</span>&nbsp;},</div>
+  <div><span style="color: #939393">size</span>:&nbsp;{&nbsp;<span style="color: #939393">height</span>:&nbsp;400,&nbsp;<span style="color: #939393">width</span>:&nbsp;200&nbsp;}</div>
 </div></div>
   <div>}</div>
   <div>&nbsp;</div>
   <div>{</div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #CCC">Format</span>:&nbsp;<span style="color: #E6DB74">'JPEG&nbsp;(Joint&nbsp;Photographic&nbsp;Experts&nbsp;Group&nbsp;JFIF&nbsp;format)'</span>,</div>
+  <div><span style="color: #939393">Format</span>:&nbsp;<span style="color: #3CDAFF">'JPEG&nbsp;(Joint&nbsp;Photographic&nbsp;Experts&nbsp;Group&nbsp;JFIF&nbsp;format)'</span>,</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #CCC">format</span>:&nbsp;<span style="color: #E6DB74">'JPEG'</span>,</div>
+  <div><span style="color: #939393">format</span>:&nbsp;<span style="color: #3CDAFF">'JPEG'</span>,</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #CCC">Geometry</span>:&nbsp;<span style="color: #E6DB74">'380x248'</span>,</div>
+  <div><span style="color: #939393">Geometry</span>:&nbsp;<span style="color: #3CDAFF">'380x248'</span>,</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #CCC">size</span>:&nbsp;{</div>
+  <div><span style="color: #939393">size</span>:&nbsp;{</div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #CCC">width</span>:&nbsp;<span style="color: #66D9EF">380</span>,&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #F92672; font-weight: bold">//</span></div>
+  <div><span style="color: #939393">width</span>:&nbsp;380,&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: red; font-weight: bold">//</span></div>
 </div>&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #F92672; font-weight: bold">should&nbsp;equal</span>&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #66D9EF">200</span></div>
+  <div><span style="color: red; font-weight: bold">should&nbsp;equal</span>&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div>200</div>
 </div></div>
 </div></div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #CCC">height</span>:&nbsp;<span style="color: #66D9EF">248</span>&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #F92672; font-weight: bold">//</span></div>
+  <div><span style="color: #939393">height</span>:&nbsp;248&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: red; font-weight: bold">//</span></div>
 </div>&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #F92672; font-weight: bold">should&nbsp;equal</span>&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #66D9EF">400</span></div>
+  <div><span style="color: red; font-weight: bold">should&nbsp;equal</span>&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div>400</div>
 </div></div>
 </div></div>
 </div></div>
   <div>},</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #CCC">Class</span>:&nbsp;<span style="color: #E6DB74">'DirectClass'</span>,</div>
+  <div><span style="color: #939393">Class</span>:&nbsp;<span style="color: #3CDAFF">'DirectClass'</span>,</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #CCC">Type</span>:&nbsp;<span style="color: #E6DB74">'true&nbsp;color'</span>,</div>
+  <div><span style="color: #939393">Type</span>:&nbsp;<span style="color: #3CDAFF">'true&nbsp;color'</span>,</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #CCC">Depth</span>:&nbsp;<span style="color: #E6DB74">'8&nbsp;bits-per-pixel&nbsp;component'</span>,</div>
+  <div><span style="color: #939393">Depth</span>:&nbsp;<span style="color: #3CDAFF">'8&nbsp;bits-per-pixel&nbsp;component'</span>,</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #CCC">depth</span>:&nbsp;<span style="color: #66D9EF">8</span>,</div>
+  <div><span style="color: #939393">depth</span>:&nbsp;8,</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #E6DB74">'Channel&nbsp;Depths'</span>:&nbsp;{</div>
+  <div><span style="color: #3CDAFF">'Channel&nbsp;Depths'</span>:&nbsp;{</div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #CCC">Red</span>:&nbsp;<span style="color: #E6DB74">'8&nbsp;bits'</span>,</div>
+  <div><span style="color: #939393">Red</span>:&nbsp;<span style="color: #3CDAFF">'8&nbsp;bits'</span>,</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #CCC">Green</span>:&nbsp;<span style="color: #E6DB74">'8&nbsp;bits'</span>,</div>
+  <div><span style="color: #939393">Green</span>:&nbsp;<span style="color: #3CDAFF">'8&nbsp;bits'</span>,</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #CCC">Blue</span>:&nbsp;<span style="color: #E6DB74">'8&nbsp;bits'</span></div>
-</div></div>
-  <div>&nbsp;&nbsp;<span style="color: #F92672; font-weight: bold">//&nbsp;missing</span>&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #CCC">Gray</span>:&nbsp;<span style="color: #E6DB74">'8&nbsp;bits'</span></div>
-</div></div>
-  <div>},</div>
+  <div><span style="color: #939393">Blue</span>:&nbsp;<span style="color: #3CDAFF">'8&nbsp;bits'</span>,</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #E6DB74">'Channel&nbsp;Statistics'</span>:&nbsp;{</div>
-  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #CCC">Red</span>:&nbsp;{</div>
-  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #CCC">Minimum</span>:&nbsp;<span style="color: #E6DB74">'3084.00&nbsp;(0.0471)'</span>,</div>
-  <div><span style="color: #CCC">Maximum</span>:&nbsp;<span style="color: #E6DB74">'65535.00&nbsp;(1.0000)'</span>,</div>
-  <div><span style="color: #CCC">Mean</span>:&nbsp;<span style="color: #E6DB74">'59679.08&nbsp;(0.9106)'</span>,</div>
-  <div><span style="color: #E6DB74">'Standard&nbsp;Deviation'</span>:&nbsp;<span style="color: #E6DB74">'11641.69&nbsp;(0.1776)'</span></div>
+  <div><span style="color: #939393">Gray</span>:&nbsp;<span style="color: white">undefined</span>&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: red; font-weight: bold">//</span></div>
+</div>&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: red; font-weight: bold">should&nbsp;equal</span>&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #3CDAFF">'8&nbsp;bits'</span></div>
+</div></div>
+</div></div>
 </div></div>
   <div>},</div>
-  <div><span style="color: #CCC">Green</span>:&nbsp;{</div>
+</div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #CCC">Minimum</span>:&nbsp;<span style="color: #E6DB74">'7453.00&nbsp;(0.1137)'</span>,</div>
-  <div><span style="color: #CCC">Maximum</span>:&nbsp;<span style="color: #E6DB74">'65535.00&nbsp;(1.0000)'</span>,</div>
-  <div><span style="color: #CCC">Mean</span>:&nbsp;<span style="color: #E6DB74">'57724.93&nbsp;(0.8808)'</span>,</div>
-  <div><span style="color: #E6DB74">'Standard&nbsp;Deviation'</span>:&nbsp;<span style="color: #E6DB74">'14237.78&nbsp;(0.2173)'</span></div>
+  <div><span style="color: #3CDAFF">'Channel&nbsp;Statistics'</span>:&nbsp;{</div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #939393">Red</span>:&nbsp;{</div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #939393">Minimum</span>:&nbsp;<span style="color: #3CDAFF">'4626.00&nbsp;(0.0706)'</span>,</div>
+  <div><span style="color: #939393">Maximum</span>:&nbsp;<span style="color: #3CDAFF">'65535.00&nbsp;(1.0000)'</span>,</div>
+  <div><span style="color: #939393">Mean</span>:&nbsp;<span style="color: #3CDAFF">'59679.23&nbsp;(0.9106)'</span>,</div>
+  <div><span style="color: #3CDAFF">'Standard&nbsp;Deviation'</span>:&nbsp;<span style="color: #3CDAFF">'11628.66&nbsp;(0.1774)'</span></div>
 </div></div>
   <div>},</div>
-  <div><span style="color: #CCC">Blue</span>:&nbsp;{</div>
+  <div><span style="color: #939393">Green</span>:&nbsp;{</div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #CCC">Minimum</span>:&nbsp;<span style="color: #E6DB74">'0.00&nbsp;(0.0000)'</span>,</div>
-  <div><span style="color: #CCC">Maximum</span>:&nbsp;<span style="color: #E6DB74">'65535.00&nbsp;(1.0000)'</span>,</div>
-  <div><span style="color: #CCC">Mean</span>:&nbsp;<span style="color: #E6DB74">'54867.59&nbsp;(0.8372)'</span>,</div>
-  <div><span style="color: #E6DB74">'Standard&nbsp;Deviation'</span>:&nbsp;<span style="color: #E6DB74">'19237.71&nbsp;(0.2935)'</span></div>
+  <div><span style="color: #939393">Minimum</span>:&nbsp;<span style="color: #3CDAFF">'7710.00&nbsp;(0.1176)'</span>,</div>
+  <div><span style="color: #939393">Maximum</span>:&nbsp;<span style="color: #3CDAFF">'65535.00&nbsp;(1.0000)'</span>,</div>
+  <div><span style="color: #939393">Mean</span>:&nbsp;<span style="color: #3CDAFF">'57725.47&nbsp;(0.8808)'</span>,</div>
+  <div><span style="color: #3CDAFF">'Standard&nbsp;Deviation'</span>:&nbsp;<span style="color: #3CDAFF">'14235.62&nbsp;(0.2172)'</span></div>
+</div></div>
+  <div>},</div>
+  <div><span style="color: #939393">Blue</span>:&nbsp;{</div>
+  <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
+  <div><span style="color: #939393">Minimum</span>:&nbsp;<span style="color: #3CDAFF">'0.00&nbsp;(0.0000)'</span>,</div>
+  <div><span style="color: #939393">Maximum</span>:&nbsp;<span style="color: #3CDAFF">'65535.00&nbsp;(1.0000)'</span>,</div>
+  <div><span style="color: #939393">Mean</span>:&nbsp;<span style="color: #3CDAFF">'54870.56&nbsp;(0.8373)'</span>,</div>
+  <div><span style="color: #3CDAFF">'Standard&nbsp;Deviation'</span>:&nbsp;<span style="color: #3CDAFF">'19212.51&nbsp;(0.2932)'</span></div>
 </div></div>
   <div>}</div>
 </div></div>
   <div>},</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #CCC">Filesize</span>:&nbsp;<span style="color: #E6DB74">'13.2Ki'</span>,</div>
+  <div><span style="color: #939393">Filesize</span>:&nbsp;<span style="color: #3CDAFF">'13.2K'</span>,</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #CCC">Interlace</span>:&nbsp;<span style="color: #E6DB74">'No'</span>,</div>
+  <div><span style="color: #939393">Interlace</span>:&nbsp;<span style="color: #3CDAFF">'No'</span>,</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #CCC">Orientation</span>:&nbsp;<span style="color: #E6DB74">'TopLeft'</span>,</div>
+  <div><span style="color: #939393">Orientation</span>:&nbsp;<span style="color: #3CDAFF">'TopLeft'</span>,</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #E6DB74">'Background&nbsp;Color'</span>:&nbsp;<span style="color: #E6DB74">'white'</span>,</div>
+  <div><span style="color: #3CDAFF">'Background&nbsp;Color'</span>:&nbsp;<span style="color: #3CDAFF">'white'</span>,</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #E6DB74">'Border&nbsp;Color'</span>:&nbsp;<span style="color: #E6DB74">'#DFDFDF'</span>,</div>
+  <div><span style="color: #3CDAFF">'Border&nbsp;Color'</span>:&nbsp;<span style="color: #3CDAFF">'#DFDFDF'</span>,</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #E6DB74">'Matte&nbsp;Color'</span>:&nbsp;<span style="color: #E6DB74">'#BDBDBD'</span>,</div>
+  <div><span style="color: #3CDAFF">'Matte&nbsp;Color'</span>:&nbsp;<span style="color: #3CDAFF">'#BDBDBD'</span>,</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #E6DB74">'Page&nbsp;geometry'</span>:&nbsp;<span style="color: #E6DB74">'380x248+0+0'</span>,</div>
+  <div><span style="color: #3CDAFF">'Page&nbsp;geometry'</span>:&nbsp;<span style="color: #3CDAFF">'380x248+0+0'</span>,</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #CCC">Compose</span>:&nbsp;<span style="color: #E6DB74">'Over'</span>,</div>
+  <div><span style="color: #939393">Compose</span>:&nbsp;<span style="color: #3CDAFF">'Over'</span>,</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #CCC">Dispose</span>:&nbsp;<span style="color: #E6DB74">'Undefined'</span>,</div>
+  <div><span style="color: #939393">Dispose</span>:&nbsp;<span style="color: #3CDAFF">'Undefined'</span>,</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #CCC">Iterations</span>:&nbsp;<span style="color: #E6DB74">'0'</span>,</div>
+  <div><span style="color: #939393">Iterations</span>:&nbsp;<span style="color: #3CDAFF">'0'</span>,</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #CCC">Compression</span>:&nbsp;<span style="color: #E6DB74">'JPEG'</span>,</div>
+  <div><span style="color: #939393">Compression</span>:&nbsp;<span style="color: #3CDAFF">'JPEG'</span>,</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #E6DB74">'JPEG-Quality'</span>:&nbsp;<span style="color: #E6DB74">'85'</span>,</div>
+  <div><span style="color: #3CDAFF">'JPEG-Quality'</span>:&nbsp;<span style="color: #3CDAFF">'85'</span>,</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #E6DB74">'JPEG-Colorspace'</span>:&nbsp;<span style="color: #E6DB74">'2'</span>,</div>
+  <div><span style="color: #3CDAFF">'JPEG-Colorspace'</span>:&nbsp;<span style="color: #3CDAFF">'2'</span>,</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #E6DB74">'JPEG-Colorspace-Name'</span>:&nbsp;<span style="color: #E6DB74">'RGB'</span>,</div>
+  <div><span style="color: #3CDAFF">'JPEG-Colorspace-Name'</span>:&nbsp;<span style="color: #3CDAFF">'RGB'</span>,</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #E6DB74">'JPEG-Sampling-factors'</span>:&nbsp;<span style="color: #E6DB74">'2x2,1x1,1x1'</span>,</div>
+  <div><span style="color: #3CDAFF">'JPEG-Sampling-factors'</span>:&nbsp;<span style="color: #3CDAFF">'2x2,1x1,1x1'</span>,</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #CCC">Signature</span>:&nbsp;<span style="color: #E6DB74">'6668dfca6742e25a616a5c51f38311c9bf855574281a862b2afc7be25cf42f1d'</span>,</div>
+  <div><span style="color: #939393">Signature</span>:&nbsp;<span style="color: #3CDAFF">'5acb0f0d4e02a3b565f723d59290032e96df8c89989f41a71900741ce512beb4'</span>,</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #E6DB74">'Profile-EXIF'</span>:&nbsp;{</div>
+  <div><span style="color: #3CDAFF">'Profile-EXIF'</span>:&nbsp;{</div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #CCC">Orientation</span>:&nbsp;<span style="color: #E6DB74">'1'</span>,&nbsp;<span style="color: #E6DB74">'X&nbsp;Resolution'</span>:&nbsp;<span style="color: #E6DB74">'72'</span>,&nbsp;<span style="color: #E6DB74">'Y&nbsp;Resolution'</span>:&nbsp;<span style="color: #E6DB74">'72'</span>,</div>
-  <div><span style="color: #E6DB74">'Resolution&nbsp;Unit'</span>:&nbsp;<span style="color: #E6DB74">'2'</span>,&nbsp;<span style="color: #E6DB74">'Date&nbsp;Time'</span>:&nbsp;<span style="color: #E6DB74">'2014:07:13&nbsp;16:21:04'</span>,</div>
-  <div><span style="color: #E6DB74">'Y&nbsp;Cb&nbsp;Cr&nbsp;Positioning'</span>:&nbsp;<span style="color: #E6DB74">'1'</span>,&nbsp;<span style="color: #E6DB74">'Exif&nbsp;Offset'</span>:&nbsp;<span style="color: #E6DB74">'144'</span>,&nbsp;<span style="color: #E6DB74">'Exif&nbsp;Version'</span>:&nbsp;<span style="color: #E6DB74">'0221'</span>,</div>
-  <div><span style="color: #E6DB74">'Components&nbsp;Configuration'</span>:&nbsp;<span style="color: #E6DB74">'\\001\\002\\003\\000'</span>,</div>
-  <div><span style="color: #E6DB74">'Flash&nbsp;Pix&nbsp;Version'</span>:&nbsp;<span style="color: #E6DB74">'0100'</span>,&nbsp;<span style="color: #E6DB74">'Color&nbsp;Space'</span>:&nbsp;<span style="color: #E6DB74">'1'</span>,</div>
-  <div><span style="color: #E6DB74">'Exif&nbsp;Image&nbsp;Width'</span>:&nbsp;<span style="color: #E6DB74">'380'</span>,&nbsp;<span style="color: #E6DB74">'Exif&nbsp;Image&nbsp;Length'</span>:&nbsp;<span style="color: #E6DB74">'248'</span></div>
+  <div><span style="color: #939393">Orientation</span>:&nbsp;<span style="color: #3CDAFF">'1'</span>,&nbsp;<span style="color: #3CDAFF">'X&nbsp;Resolution'</span>:&nbsp;<span style="color: #3CDAFF">'72'</span>,&nbsp;<span style="color: #3CDAFF">'Y&nbsp;Resolution'</span>:&nbsp;<span style="color: #3CDAFF">'72'</span>,</div>
+  <div><span style="color: #3CDAFF">'Resolution&nbsp;Unit'</span>:&nbsp;<span style="color: #3CDAFF">'2'</span>,&nbsp;<span style="color: #3CDAFF">'Date&nbsp;Time'</span>:&nbsp;<span style="color: #3CDAFF">'2014:07:13&nbsp;16:21:04'</span>,</div>
+  <div><span style="color: #3CDAFF">'Y&nbsp;Cb&nbsp;Cr&nbsp;Positioning'</span>:&nbsp;<span style="color: #3CDAFF">'1'</span>,&nbsp;<span style="color: #3CDAFF">'Exif&nbsp;Offset'</span>:&nbsp;<span style="color: #3CDAFF">'144'</span>,&nbsp;<span style="color: #3CDAFF">'Exif&nbsp;Version'</span>:&nbsp;<span style="color: #3CDAFF">'0221'</span>,</div>
+  <div><span style="color: #3CDAFF">'Components&nbsp;Configuration'</span>:&nbsp;<span style="color: #3CDAFF">'\\001\\002\\003\\000'</span>,</div>
+  <div><span style="color: #3CDAFF">'Flash&nbsp;Pix&nbsp;Version'</span>:&nbsp;<span style="color: #3CDAFF">'0100'</span>,&nbsp;<span style="color: #3CDAFF">'Color&nbsp;Space'</span>:&nbsp;<span style="color: #3CDAFF">'1'</span>,</div>
+  <div><span style="color: #3CDAFF">'Exif&nbsp;Image&nbsp;Width'</span>:&nbsp;<span style="color: #3CDAFF">'380'</span>,&nbsp;<span style="color: #3CDAFF">'Exif&nbsp;Image&nbsp;Length'</span>:&nbsp;<span style="color: #3CDAFF">'248'</span></div>
 </div></div>
   <div>},</div>
 </div></div>
   <div>&nbsp;&nbsp;<div style="display: inline-block; vertical-align: top">
-  <div><span style="color: #CCC">path</span>:&nbsp;<span style="color: #E6DB74">'magic-pen-6-colours.jpg'</span></div>
+  <div><span style="color: #939393">path</span>:&nbsp;<span style="color: #3CDAFF">'magic-pen-6-colours.jpg'</span></div>
 </div></div>
   <div>}</div>
 </div><h2 id="license">License</h2>
