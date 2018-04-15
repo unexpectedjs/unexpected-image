@@ -14,8 +14,8 @@
   },
   "devDependencies": {
     "coveralls": "^2.11.2",
-    "eslint": "^2.13.1",
-    "eslint-config-onelint": "^1.2.0",
+    "eslint": "^4.19.1",
+    "eslint-config-onelint": "^3.0.0",
     "istanbul": "^0.3.13",
     "magicpen": "^4.11.0",
     "mocha": "^2.2.5",

@@ -33,7 +33,7 @@ describe('unexpected-image', function () {
                 }),
                 'when rejected',
                 'to have message',
-                    /height: 424 \/\/ should equal 426/
+                /height: 424 \/\/ should equal 426/
             );
         });
     });
@@ -61,7 +61,7 @@ describe('unexpected-image', function () {
                 }),
                 'when rejected',
                 'to have message',
-                    /height: 424 \/\/ should equal 426/
+                /height: 424 \/\/ should equal 426/
             );
         });
     });
@@ -89,7 +89,7 @@ describe('unexpected-image', function () {
                 }),
                 'when rejected',
                 'to have message',
-                    /height: 424 \/\/ should equal 426/
+                /height: 424 \/\/ should equal 426/
             );
         });
     });
