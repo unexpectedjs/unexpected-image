@@ -4,7 +4,7 @@
   "description": "Image metadata plugin for the Unexpected assertion library",
   "main": "lib/unexpectedImage.js",
   "dependencies": {
-    "gm": "^1.17.0",
+    "gm": "^1.23.1",
     "minimist": "1.2.0",
     "magicpen-media": "^1.5.1"
   },
