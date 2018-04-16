@@ -17,7 +17,7 @@
     "eslint": "^4.19.1",
     "eslint-config-onelint": "^3.0.0",
     "istanbul": "^0.4.5",
-    "magicpen": "^4.11.0",
+    "magicpen": "^5.12.0",
     "mocha": "^2.2.5",
     "unexpected": "^10.3.1",
     "unexpected-documentation-site-generator": "^4.0.0",
