@@ -6,6 +6,8 @@ const pathModule = require('path');
 const fs = require('fs');
 
 describe('unexpected-image', () => {
+  unexpected.output.preferredWidth = 80;
+
   const expect = unexpected
     .clone()
     .installPlugin(require('../lib/unexpectedImage'));
