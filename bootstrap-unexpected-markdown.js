@@ -1,4 +1,4 @@
-/*global unexpected:true*/
+/* global unexpected:true */
 unexpected = require('unexpected');
 // There's a bug in unexpected-markdown that causes npm test
 // not to work unless this is done on the global instance:
