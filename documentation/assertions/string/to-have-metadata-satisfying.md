@@ -14,7 +14,7 @@ return expect('magic-pen-6-colours.jpg', 'to have metadata satisfying', {
 ```
 
 ```output
-expected magic-pen-6-colours.jpg (image/jpeg) to have metadata satisfying
+expected 'magic-pen-6-colours.jpg' to have metadata satisfying
 {
   format: 'JPEG',
   'Channel Depths': { Gray: '8 bits' },
