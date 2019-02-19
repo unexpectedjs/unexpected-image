@@ -24,7 +24,7 @@
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
     "magicpen": "^5.12.0",
-    "mocha": "^5.1.5",
+    "mocha": "^6.0.0",
     "nyc": "^13.1.0",
     "prettier": "^1.15.2",
     "unexpected": "^11.0.0-3",
