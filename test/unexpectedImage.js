@@ -1,7 +1,5 @@
 const unexpected = require('unexpected');
-
 const pathModule = require('path');
-
 const fs = require('fs');
 
 describe('unexpected-image', () => {
