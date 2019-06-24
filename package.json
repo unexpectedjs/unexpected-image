@@ -6,7 +6,7 @@
   "dependencies": {
     "gm": "^1.23.1",
     "minimist": "1.2.0",
-    "magicpen-media": "^1.5.1"
+    "magicpen-media": "^2.0.0"
   },
   "peerDependencies": {
     "magicpen-media": "^1.5.1",
