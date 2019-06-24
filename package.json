@@ -29,7 +29,7 @@
     "prettier": "^1.15.2",
     "unexpected": "^11.0.0-3",
     "unexpected-documentation-site-generator": "^6.0.0",
-    "unexpected-markdown": "^3.0.0"
+    "unexpected-markdown": "^4.0.0"
   },
   "scripts": {
     "lint": "eslint .",
