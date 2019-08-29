@@ -9,7 +9,7 @@
     "magicpen-media": "^2.0.0"
   },
   "peerDependencies": {
-    "magicpen-media": "^1.5.1",
+    "magicpen-media": "^2.0.0",
     "unexpected": "^10.0.0 || ^11.0.0"
   },
   "devDependencies": {
