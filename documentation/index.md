@@ -22,17 +22,16 @@ The metadata will be extracted using `gm identify` via the [gm](http://aheckmann
 library and matched with
 [to satisfy](https://unexpectedjs.github.io/assertions/any/to-satisfy/) semantics:
 
-
 ```js#async:true
 return expect('magic-pen-6-colours.jpg', 'to have metadata satisfying', {
-    format: 'JPEG',
-    'Channel Depths': {
-        Gray: '8 bits'
-    },
-    size: {
-        height: 400,
-        width: 200
-    }
+  format: 'JPEG',
+  'Channel Depths': {
+    Gray: '8 bits',
+  },
+  size: {
+    height: 400,
+    width: 200,
+  },
 });
 ```
 
@@ -102,8 +101,7 @@ expected 'magic-pen-6-colours.jpg' to have metadata satisfying
 }
 ```
 
-License
--------
+## License
 
 Unexpected-image is licensed under a standard 3-clause BSD license -- see
 the `LICENSE` file for details.

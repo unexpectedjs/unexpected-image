@@ -23,8 +23,8 @@ describe('unexpected-image', () => {
       expect(turtleJpeg, 'to have metadata satisfying', {
         format: 'JPEG',
         size: {
-          width: 481
-        }
+          width: 481,
+        },
       }));
 
     it('should fail with a diff', () =>
@@ -33,10 +33,10 @@ describe('unexpected-image', () => {
           format: 'JPEG',
           size: {
             width: 481,
-            height: 426
+            height: 426,
           },
           Interlace: 'Yes',
-          Resolution: '96x96 pixels/inch'
+          Resolution: '96x96 pixels/inch',
         }),
         'when rejected',
         'to have message',
@@ -49,8 +49,8 @@ describe('unexpected-image', () => {
       expect(new Uint8Array(turtleJpeg), 'to have metadata satisfying', {
         format: 'JPEG',
         size: {
-          width: 481
-        }
+          width: 481,
+        },
       }));
 
     it('should fail with a diff', () =>
@@ -59,10 +59,10 @@ describe('unexpected-image', () => {
           format: 'JPEG',
           size: {
             width: 481,
-            height: 426
+            height: 426,
           },
           Interlace: 'Yes',
-          Resolution: '96x96 pixels/inch'
+          Resolution: '96x96 pixels/inch',
         }),
         'when rejected',
         'to have message',
@@ -75,8 +75,8 @@ describe('unexpected-image', () => {
       expect(turtleJpegPath, 'to have metadata satisfying', {
         format: 'JPEG',
         size: {
-          width: 481
-        }
+          width: 481,
+        },
       }));
 
     it('should fail with a diff', () =>
@@ -85,10 +85,10 @@ describe('unexpected-image', () => {
           format: 'JPEG',
           size: {
             width: 481,
-            height: 426
+            height: 426,
           },
           Interlace: 'Yes',
-          Resolution: '96x96 pixels/inch'
+          Resolution: '96x96 pixels/inch',
         }),
         'when rejected',
         'to have message',
@@ -101,7 +101,7 @@ describe('unexpected-image', () => {
       pathModule.resolve(__dirname, '..', 'testdata', 'reallyapng.jpg'),
       'to have metadata satisfying',
       {
-        format: 'PNG'
+        format: 'PNG',
       }
     ));
 
@@ -111,7 +111,7 @@ describe('unexpected-image', () => {
         pathModule.resolve(__dirname, '..', 'testdata', 'foo.data'),
         'to have metadata satisfying',
         {
-          format: 'PNG'
+          format: 'PNG',
         }
       ),
       'to be rejected with',
@@ -124,7 +124,7 @@ describe('unexpected-image', () => {
       'to have metadata satisfying',
       {
         format: 'PNG',
-        Geometry: '20x20'
+        Geometry: '20x20',
       }
     ));
 });

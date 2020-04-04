@@ -1,5 +1,4 @@
-unexpected-image
-================
+# unexpected-image
 
 Image metadata plugin for the [Unexpected](https://unexpected.js.org/) assertion library (version 7+ required). Uses GraphicsMagick, which must be installed on your system.
 
@@ -10,8 +9,7 @@ Image metadata plugin for the [Unexpected](https://unexpected.js.org/) assertion
 
 Read [the documentation](http://unexpected.js.org/unexpected-image/).
 
-License
--------
+## License
 
 Unexpected-image is licensed under a standard 3-clause BSD license -- see
 the `LICENSE` file for details.
