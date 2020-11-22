@@ -10,7 +10,7 @@
   },
   "peerDependencies": {
     "magicpen-media": "^2.0.0",
-    "unexpected": "^10.0.0 || ^11.0.0"
+    "unexpected": "^10.0.0 || ^11.0.0 || ^12.0.0"
   },
   "devDependencies": {
     "coveralls": "^3.0.0",
