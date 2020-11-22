@@ -101,6 +101,10 @@ expected 'magic-pen-6-colours.jpg' to have metadata satisfying
 }
 ```
 
+## Releases
+
+[Changelog](https://github.com/unexpectedjs/unexpected-image/blob/master/CHANGELOG.md)
+
 ## License
 
 Unexpected-image is licensed under a standard 3-clause BSD license -- see
