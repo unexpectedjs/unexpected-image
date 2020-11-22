@@ -1,3 +1,30 @@
+### v4.0.0 (2020-11-22)
+
+#### Pull requests
+
+- [#57](https://github.com/unexpectedjs/unexpected-image/pull/57) Upgrade eslint-config-standard to version 16.0.1 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#55](https://github.com/unexpectedjs/unexpected-image/pull/55) Upgrade eslint-config-standard to version 15.0.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#51](https://github.com/unexpectedjs/unexpected-image/pull/51) Upgrade prettier to version 2.1.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#49](https://github.com/unexpectedjs/unexpected-image/pull/49) Upgrade eslint-plugin-mocha to version 8.0.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#43](https://github.com/unexpectedjs/unexpected-image/pull/43) Upgrade eslint-plugin-mocha to version 7.0.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#42](https://github.com/unexpectedjs/unexpected-image/pull/42) Upgrade eslint to version 7.0.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#39](https://github.com/unexpectedjs/unexpected-image/pull/39) Upgrade minimist to version 1.2.5 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#38](https://github.com/unexpectedjs/unexpected-image/pull/38) Upgrade minimist to version 1.2.4 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#37](https://github.com/unexpectedjs/unexpected-image/pull/37) Upgrade mocha to version 7.0.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#36](https://github.com/unexpectedjs/unexpected-image/pull/36) Upgrade unexpected-markdown to version 5.0.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#35](https://github.com/unexpectedjs/unexpected-image/pull/35) Upgrade eslint-plugin-node to version 11.0.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#34](https://github.com/unexpectedjs/unexpected-image/pull/34) Upgrade nyc to version 15.0.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#33](https://github.com/unexpectedjs/unexpected-image/pull/33) Upgrade eslint-plugin-node to version 10.0.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+
+#### Commits to master
+
+- [Add CHANGELOG.md + offline-github-changelog integration](https://github.com/unexpectedjs/unexpected-image/commit/ec43dede605772c1028a3ec36629d2c3505507fb) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
+- [Update mocha to ^8.2.1, switch to .mocharc.json](https://github.com/unexpectedjs/unexpected-image/commit/b2de8d459267e91ccc45bed6521ede3c7d0b36eb) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
+- [Drop node.js 8 support, add 14, lint with 14 \(semver-major\)](https://github.com/unexpectedjs/unexpected-image/commit/e39c40f2635601960ad0e70e9ed08ddc37df4b25) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
+- [Accept unexpected ^12.0.0 as a peer dep](https://github.com/unexpectedjs/unexpected-image/commit/3536aa9dbadfff84ff7db4d3f9ae416fa2a5ec8c) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
+- [Update unexpected to ^12.0.0](https://github.com/unexpectedjs/unexpected-image/commit/6a173f5c1af5daf773891ccd031b2b1346f79383) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
+- [+6 more](https://github.com/unexpectedjs/unexpected-image/compare/v3.1.0...v4.0.0)
+
 ### v3.1.0 (2019-08-30)
 
 #### Pull requests
