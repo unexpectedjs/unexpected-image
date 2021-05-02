@@ -13,7 +13,6 @@
     "unexpected": "^10.0.0 || ^11.0.0 || ^12.0.0"
   },
   "devDependencies": {
-    "coveralls": "^3.0.0",
     "eslint": "^7.0.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-standard": "^16.0.1",
@@ -34,7 +33,6 @@
   "scripts": {
     "lint": "eslint . && prettier --check '**/*.{js,md}'",
     "test": "mocha test/**/*.js documentation/**/*.md",
-    "test:ci": "npm run coverage && npm run generate-site",
     "coverage": "NODE_ENV=development nyc --reporter=lcov --reporter=text --all -- npm test && echo google-chrome coverage/lcov-report/index.html",
     "generate-site": "generate-site --require ./bootstrap-unexpected-markdown.js && cp magic-pen-6-colours.jpg site-build && cp magic-pen-6-colours.jpg site-build/assertions/string/to-have-metadata-satisfying/",
     "update-examples": "generate-site --require ./bootstrap-unexpected-markdown.js --update-examples",
