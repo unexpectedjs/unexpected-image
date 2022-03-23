@@ -5,7 +5,7 @@
   "main": "lib/unexpectedImage.js",
   "dependencies": {
     "gm": "^1.23.1",
-    "minimist": "1.2.5",
+    "minimist": "1.2.6",
     "magicpen-media": "^3.0.0"
   },
   "peerDependencies": {
