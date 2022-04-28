@@ -1,6 +1,6 @@
 {
   "name": "unexpected-image",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "description": "Image metadata plugin for the Unexpected assertion library",
   "main": "lib/unexpectedImage.js",
   "dependencies": {

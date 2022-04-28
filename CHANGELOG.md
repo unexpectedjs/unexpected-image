@@ -1,3 +1,28 @@
+### v4.0.0 (2022-04-28)
+
+#### Pull requests
+
+- [#87](https://github.com/unexpectedjs/unexpected-image/pull/87) Upgrade minimist to version 1.2.6 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#85](https://github.com/unexpectedjs/unexpected-image/pull/85) Upgrade eslint-plugin-mocha to version 10.0.1 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#84](https://github.com/unexpectedjs/unexpected-image/pull/84) Upgrade prettier to version 2.5.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#83](https://github.com/unexpectedjs/unexpected-image/pull/83) Upgrade eslint to version 8.1.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#82](https://github.com/unexpectedjs/unexpected-image/pull/82) Upgrade eslint-plugin-promise to version 5.1.1 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#78](https://github.com/unexpectedjs/unexpected-image/pull/78) Upgrade prettier to version 2.4.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#72](https://github.com/unexpectedjs/unexpected-image/pull/72) Upgrade eslint-plugin-mocha to version 9.0.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#71](https://github.com/unexpectedjs/unexpected-image/pull/71) Upgrade prettier to version 2.3.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#64](https://github.com/unexpectedjs/unexpected-image/pull/64) Upgrade eslint-config-prettier to version 7.0.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#62](https://github.com/unexpectedjs/unexpected-image/pull/62) Upgrade eslint-plugin-standard to version 5.0.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#61](https://github.com/unexpectedjs/unexpected-image/pull/61) Upgrade magicpen-media to version 3.0.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+- [#59](https://github.com/unexpectedjs/unexpected-image/pull/59) Upgrade prettier to version 2.2.0 ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+
+#### Commits to master
+
+- [Update unexpected the dev dep to ^13.0.0, allow ^13.0.0 for the peer dep](https://github.com/unexpectedjs/unexpected-image/commit/0b5742c7317618c85e4693de4c7b3353d29640ca) ([Andreas Lind](mailto:andreaslindpetersen@gmail.com))
+- [npm i --save-dev eslint-plugin-n eslint-config-standard@latest && npm uninstall eslint-plugin-node eslint-plugin-standard](https://github.com/unexpectedjs/unexpected-image/commit/ba4f37a8a34c4b74f2c43f25ad4ea99f1d10f965) ([Andreas Lind](mailto:andreas.lind@workday.com))
+- [Switch to GitHub Actions](https://github.com/unexpectedjs/unexpected-image/commit/5782b74e3247e0ed025401203285644b0ff9e1b3) ([Alex J Burke](mailto:alex@alexjeffburke.com))
+- [Fix eslint-plugin-prettier usage](https://github.com/unexpectedjs/unexpected-image/commit/2097f80c2ad0dc7f899628bd35c2980e9367e6a5) ([Andreas Lind](mailto:andreas.lind@workday.com))
+- [Update eslint-config-prettier to version 8.3.0](https://github.com/unexpectedjs/unexpected-image/commit/f837771d806f6b43759fb365447fb7cebdb6c571) ([depfu[bot]](mailto:23717796+depfu[bot]@users.noreply.github.com))
+
 ### v4.0.0 (2020-11-22)
 
 #### Pull requests
